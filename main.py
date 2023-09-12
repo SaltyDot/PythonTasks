@@ -75,3 +75,23 @@ try:
 
 except Exception as e:
     print(f"Error:{e}")
+
+    #3rd task
+try:
+    number1,number2,operation= int(input("Enter the first number:")),int(input("Enter the 2nd-number:")), input("Enter"
+    "the math operation you want to perform:")
+    if operation=="-":
+        print(number1-number2)
+    elif operation=="+":
+        print(number1+number2)
+    elif operation=="*":
+        print(number1*number2)
+    elif operation=="/":
+        if number2!=0:
+            print(number1/number2)
+        else:
+            print("Can't divide by 0")
+    else:
+        print("Please enter a valid math operation, those being: +,-,* and / ")
+except Exception as ee:
+    print(f"Error:{ee}")
