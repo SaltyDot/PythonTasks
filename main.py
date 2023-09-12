@@ -40,9 +40,9 @@
 # except Exception as error:
 #     print(f"Error: {error}")
 
-#2nd task
+# 2nd task
 try:
-    #1st attempt
+    # 1st attempt
     # number1, number2 = input("Enter two numbers:"), input()
     # if number1.strip().isdigit() is False:
     #     raise Exception("First entry was not a number")
