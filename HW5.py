@@ -30,6 +30,14 @@ print(f"Product of the largest and the smallest number in the list: {min(numbers
 for i in range(1,len(numbers)-1):
     sum2+=numbers[i]
 print(f"Sum of numbers in the list with the exception of the first and the last number: {sum2}")
+sum2=0
+index=[]
+for i in range(num_size):
+    if numbers[i]>=0:
+        index.append(i)
+for i in range(min(index)+1, max(index)):
+    sum2+=numbers[i]
+print(f"Sum of numbers between the first and the last positive number: {sum2}")
 #2nd-task
 even=[]
 odd=[]
