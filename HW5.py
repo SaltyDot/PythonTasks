@@ -31,3 +31,19 @@ for i in range(1,len(numbers)-1):
     sum2+=numbers[i]
 print(f"Sum of numbers in the list with the exception of the first and the last number: {sum2}")
 #2nd-task
+even=[]
+odd=[]
+negative=[]
+positive=[]
+for i in range(num_size):
+    if numbers[i]%2==0:
+        even.append(numbers[i])
+    else:
+        odd.append(numbers[i])
+for i in range(num_size):
+    if numbers[i]>=0:
+        positive.append(numbers[i])
+    else:
+        negative.append(numbers[i])
+print(f"List of: \nPositive numbers: {positive}\nNegative numbers: {negative}\nEven numbers: {even}\nOdd numbers: {odd}")
+
