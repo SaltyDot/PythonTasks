@@ -22,19 +22,6 @@ def simple_number_count(list):
         else:
             continue
     return count
-def simple_number_count_v2(list):
-    count=0
-    for i in range(len(list)):
-        if list[i]>1:
-            if list[i] == 2 or list[i] == 3:
-                count += 1
-            else:
-                for x in range(2, list[i]):
-                    if list[i]%x==0:
-                        break
-                    else:
-                        count+=1
-    return count
 #4th task
 def removed_number_count(list, number):
     count=0
