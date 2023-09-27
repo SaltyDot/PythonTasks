@@ -79,7 +79,7 @@ def list_to_the_power_of(list, carat):
         newnum=list[i]**carat
         newlist.append(newnum)
     return newlist
-
+####
 
 
 
