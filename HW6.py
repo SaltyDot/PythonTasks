@@ -9,19 +9,33 @@ def multi(list):
 def minimum():
     return min(list)
 #3rd task
-def simple_number_count(list):
+# def simple_number_count(list):
+#     count=0
+#     for i in range(len(list)):
+#         if list[i]>1:
+#             if list[i]==2 or list[i]==3:
+#                 count+=1
+#             elif list[i]%2==0 or list[i]%3==0 or list[i]%5==0 or list[i]%7==0 :
+#                 continue
+#             else:
+#                 count+=1
+#         else:
+#             continue
+#     return count
+def countv2(list):
     count=0
+    truecount=0
     for i in range(len(list)):
         if list[i]>1:
-            if list[i]==2 or list[i]==3:
-                count+=1
-            elif list[i]%2==0 or list[i]%3==0:
-                continue
-            else:
-                count+=1
+            for x in range(2, list[i]):
+                if list[i]%x==0:
+                    count+=1
+                    break
         else:
-            continue
-    return count
+            count+=1
+    truecount=len(list)-count
+
+    return truecount
 #4th task
 def removed_number_count(list, number):
     count=0
