@@ -2,9 +2,7 @@ import math
 import random
 #1st task
 def caret(number, power):
-    if power==1:
-        return number
-    elif power==0:
+    if power==0:
         return 1
     else:
         return number*caret(number, power-1)
@@ -16,12 +14,8 @@ def stars(number):
     star="*"
     if number>1:
        return star+stars(number-1)
-    elif number==1:
-        return star
     else:
         return " "
-star=stars(1)
-print(star)
 #3rd task
 def sum_of_num_in_range(number1, number2):
     if number1>number2:
