@@ -1,3 +1,5 @@
+import math
+import random
 #1st task
 def caret(number, power):
     if power==1:
@@ -37,9 +39,6 @@ def sum_of_num_in_range(number1, number2):
 sum=sum_of_num_in_range(19,26)
 print(sum)
 #4th task
-import math
-import copy
-import random
 def find_position(list,a=0,b=10,minsum=math.inf,position=0): # ¯\_(ツ)_/¯
     sum=0
     if b!=len(list):
