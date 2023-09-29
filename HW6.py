@@ -34,8 +34,10 @@ def countv2(list):
         else:
             count+=1
     truecount=len(list)-count
-
     return truecount
+list=[1,1,1,1,1,1,1,1,2,3,4,5]
+wut=countv2(list)
+print(wut)
 #4th task
 def removed_number_count(list, number):
     count=0
