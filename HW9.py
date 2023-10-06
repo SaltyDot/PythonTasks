@@ -44,4 +44,9 @@ with open("7 letter words.txt", "w") as text:
 word_count=len(textcopy)
 print(word_count)
 
+with open("homework.txt","r") as test_file:
+    data=test_file.read()
+    data=data.replace("die","***")
+print(data)
+
 
