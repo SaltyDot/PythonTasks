@@ -28,7 +28,7 @@ textcopy=textcopy.split()
 # # print(Word_list)
 # for i in range (len(Word_list)):
 #     for lenght in range()
-print(textcopy)
+# print(textcopy)
 
 Word_length_list=[len(i) for i in textcopy]
 # print(Word_length_list)
