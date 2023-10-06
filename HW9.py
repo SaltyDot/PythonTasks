@@ -15,6 +15,7 @@ with open("homework.txt", "w") as test_file:
 
 with open("homework.txt", "r") as test_file:
     textcopy=test_file.read().rstrip("\n")
+print(textcopy.split())
 
 punctuation='''!()-[]{};:'"\,<>./?@#$%^&*_~'''
 
@@ -22,6 +23,7 @@ for element in textcopy:
     if element in punctuation:
         textcopy=textcopy.replace(element,"")
 textcopy=textcopy.split()
+
 # # print(textcopy)
 #
 # Word_list=textcopy.split()
@@ -41,6 +43,5 @@ with open("7 letter words.txt", "w") as text:
 #2nd task
 word_count=len(textcopy)
 print(word_count)
-
 
 
