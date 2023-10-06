@@ -38,6 +38,9 @@ with open("7 letter words.txt", "w") as text:
             text.write(textcopy[i])
             text.write(" ")
 
+#2nd task
+word_count=len(textcopy)
+print(word_count)
 
 
 
