@@ -35,6 +35,7 @@ with open("7 letter words.txt", "w") as text:
 word_count=len(textcopy)
 print(word_count)
 
+#3rd task
 with open("homework.txt","r") as test_file:
     newtext=test_file.read()
     replace_count=newtext.count("die")
