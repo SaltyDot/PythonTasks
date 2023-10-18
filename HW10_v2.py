@@ -40,11 +40,14 @@ student3 = Student("Petr4", "Poplavsky3", "23")
 
 student4 = Student("Petr5", "Poplavsky4", "24")
 academy=Academy("National Technical University of Ukraine")
+
 academy.add_teacher(teacher1)
 academy.add_teacher(teacher2)
 academy.add_student(student1)
 academy.add_student(student2)
 academy.add_student(student3)
 academy.add_student(student4)
+
 print(academy.teachers)
+
 print(academy.students)
