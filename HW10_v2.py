@@ -46,6 +46,7 @@ academy.add_teacher(teacher2)
 academy.add_student(student1)
 academy.add_student(student2)
 academy.add_student(student3)
+
 academy.add_student(student4)
 
 print(academy.teachers)
