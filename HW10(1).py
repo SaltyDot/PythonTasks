@@ -133,7 +133,6 @@ print(teacher1.full_name())
 students = [student1, student2, student3, student4]
 print(students[1].major)
 
-print(student1)
 departments = Department(students)
 departments = departments.cs_department_ty()
 departments = Department(students)
