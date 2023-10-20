@@ -24,11 +24,7 @@ class Student(Academy):
 
 
 class Department:
-    global major1
-    global major2
-    global cs_department
-    global ecn_department
-    global students
+
     major1 = ["Audit", "Global Economics", "Finance", "Marketing"]
     major2 = ["Computer Science", "Information Science"]
     cs_department = []
@@ -36,13 +32,13 @@ class Department:
 
     def __init__(self, students: list):
         self.students = students
-        self.cs_department = cs_department
-        self.ecn_department = ecn_department
+        self.cs_department = Department.cs_department
+        self.ecn_department = Department.ecn_department
 
     def ecn_department_ty(self):
         stud = []
         for i in range(len(students)):
-            if students[i].major in major1:
+            if students[i].major in Department.major1:
                 self.ecn_department.append(students[i])
         for i in range(len(self.ecn_department)):
             stud.append(self.ecn_department[i].fullname())
@@ -51,7 +47,7 @@ class Department:
     def cs_department_ty(self):
         stud = []
         for i in range(len(students)):
-            if students[i].major in major2:
+            if students[i].major in Department.major2:
                 self.cs_department.append(students[i])
         for i in range(len(self.cs_department)):
             stud.append(self.cs_department[i].fullname())
