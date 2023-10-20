@@ -9,22 +9,18 @@ class Academy:
         return f"{self.first_name} {self.last_name}"
 
 
-class Teacher:
+class Teacher(Academy):
     def __init__(self, first, last, age, department):
-        Academy.__init__(self, first, last, age)
+        super().__init__(first, last, age)
         self.department = department
 
-    def full_name(self):
-        return Academy.fullname(self)
 
 
-class Student:
+
+class Student(Academy):
     def __init__(self, first, last, age, major):
-        Academy.__init__(self, first, last, age)
+        super().__init__(first, last, age)
         self.major = major
-
-    def full_name(self):
-        return Academy.fullname(self)
 
 
 class Department:
@@ -49,7 +45,7 @@ class Department:
             if students[i].major in major1:
                 self.ecn_department.append(students[i])
         for i in range(len(self.ecn_department)):
-            stud.append(self.ecn_department[i].full_name())
+            stud.append(self.ecn_department[i].fullname())
         return print("Students of the Department of Economics: ", stud)
 
     def cs_department_ty(self):
@@ -58,7 +54,7 @@ class Department:
             if students[i].major in major2:
                 self.cs_department.append(students[i])
         for i in range(len(self.cs_department)):
-            stud.append(self.cs_department[i].full_name())
+            stud.append(self.cs_department[i].fullname())
         return print("Students of the Department of Computer Science: ", stud)
         # elif students[i] in major2:
         #     self.cs_department.append(students[i])
@@ -128,8 +124,8 @@ student4 = Student("Petr5", "Poplavsky4", "24", "Information Science")
 print(student3.first_name)
 print(teacher2.department)
 print(student3.academy)
-print(student4.full_name())
-print(teacher1.full_name())
+print(student4.fullname())
+print(teacher1.fullname())
 students = [student1, student2, student3, student4]
 print(students[1].major)
 
